@@ -1,0 +1,49 @@
+.App{
+    background-color: black;
+    min-height: 100vh;
+
+}
+
+@media screen and (min-width:768px)  {
+  #mess{
+    width: 75% ;
+  }
+}
+
+
+@keyframes loading {
+  0% {
+    content: '.';
+  }
+  33% {
+    content: '..';
+  }
+  66% {
+    content: '...';
+  }
+
+}
+#loading:after{
+    content: '';
+    animation: loading 1s infinite;
+    display: inline-block;
+  }
+
+
+
+
+
+
+
+body{background-color: #000;}
+.star{display: block; background-color: #fff; position: absolute; border-radius: 100%; animation-timing-function: linear;animation-iteration-count: infinite;}
+
+@keyframes move_right {
+   from { transform: rotate(0deg) translateX(8px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(8px) rotate(-360deg); }
+}
+
+@keyframes move_left {
+   from { transform: rotate(0deg) translateX(8px) rotate(0deg); }
+    to   { transform: rotate(-360deg) translateX(8px) rotate(360deg); }
+}
