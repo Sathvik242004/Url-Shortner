@@ -10,7 +10,11 @@
 
 # production
 /build
+
 .env
+firestore.rules
+
+
 # misc
 .DS_Store
 .env.local
