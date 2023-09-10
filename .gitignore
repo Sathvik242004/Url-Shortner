@@ -1,0 +1,5 @@
+dbkey.json
+frontend\.env
+frontend\firestore.rules
+
+.env
